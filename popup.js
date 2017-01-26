@@ -14,18 +14,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     });
 
-    var captions = document.getElementById('captions');
-    captions.addEventListener('click', function() {
-        // for (index = 0; index < getVideo.textTracks[0].cues.length; ++index) {
-        // document.write(getVideo.textTracks[0].cues[index].text + " ");
-        // }
+    // var captions = document.getElementById('captions');
+    // captions.addEventListener('click', function() {
+    //     // for (index = 0; index < getVideo.textTracks[0].cues.length; ++index) {
+    //     // document.write(getVideo.textTracks[0].cues[index].text + " ");
+    //     // }
 
-        chrome.tabs.getSelected(null, function(tab) {
-            chrome.tabs.sendRequest(tab.id, {
-                task: "caption"
-            }, function(response) {
-                alert(response.farewell);
-            });
-        });
-    });
+    //     chrome.tabs.getSelected(null, function(tab) {
+    //         chrome.tabs.sendRequest(tab.id, {
+    //             task: "caption"
+    //         }, function(response) {
+    //             alert(response.farewell);
+    //         });
+    //     });
+    // });
 });

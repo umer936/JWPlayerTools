@@ -3,7 +3,7 @@
 
   "name": "JW Player Tools",
   "description": "This extension lets you speed up and download captions from a JW video",
-  "version": "2.0",
+  "version": "2.1",
 
   "browser_action": {
     "default_icon": "icon.png",
