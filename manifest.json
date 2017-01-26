@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "JW Player Tools",
+  "description": "This extension lets you speed up and download captions from a JW video",
+  "version": "2.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+     {
+       "matches": ["*://*.tower.la.utexas.edu/*"],
+       "all_frames": true,
+       "js": ["content.js"],
+       "run_at": "document_idle"
+     }]
+}
